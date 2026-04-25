@@ -5,7 +5,7 @@
         :to="localePath('/')"
         class="flex items-center gap-2 bold-font font-600 text-lg logo"
       >
-        <img src="/icon.png" />
+        <img src="/icon.png" alt="OpenRhynn" />
         OpenRhynn
       </NuxtLink>
     </template>
