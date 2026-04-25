@@ -46,7 +46,7 @@
     </UPageSection>
 
     <UContainer>
-      <div class="grid gap-2 grid-cols-4">
+      <div class="grid gap-2 grid-cols-2 sm:grid-cols-4">
         <img
           v-for="i in 4"
           :key="'scrn-or-' + i"
@@ -108,7 +108,7 @@
             loading="lazy"
           />
         </div>
-        <div class="grid gap-2 grid-cols-4">
+        <div class="grid gap-2 grid-cols-2 sm:grid-cols-4">
           <img
             v-for="i in 4"
             :key="'scrn-' + i"

@@ -20,7 +20,7 @@
           </template>
           <template #j2me>
             <div class="mb-4 flex flex-col gap-2">
-              <div class="flex gap-1 items-center">
+              <div class="flex gap-1 items-center flex-wrap">
                 <UButton
                   variant="link"
                   class="underline underline-offset-8 text-white"
@@ -29,7 +29,6 @@
                 >
                   {{ t("Downloads.Actions.DownloadAll", { file: "OpenRhynn_ALL.jar" }) }}
                 </UButton>
-                |
                 <UButton
                   variant="link"
                   class="underline underline-offset-8 text-white"
@@ -39,7 +38,7 @@
                   .jad
                 </UButton>
               </div>
-              <div class="flex gap-1 items-center">
+              <div class="flex gap-1 items-center flex-wrap">
                 <UButton
                   variant="link"
                   class="underline underline-offset-8 text-white"
@@ -48,7 +47,6 @@
                 >
                   {{ t("Downloads.Actions.DownloadNokia", { file: "OpenRhynn_NK.jar" }) }}
                 </UButton>
-                |
                 <UButton
                   variant="link"
                   class="underline underline-offset-8 text-white"
@@ -63,7 +61,7 @@
           </template>
           <template #j2metouch>
             <div class="mb-4 flex flex-col gap-2">
-              <div class="flex gap-1 items-center">
+              <div class="flex gap-1 items-center flex-wrap">
                 <UButton
                   variant="link"
                   class="underline underline-offset-8 text-white"
@@ -72,7 +70,6 @@
                 >
                   {{ t("Downloads.Actions.DownloadTouch", { file: "OpenRhynn_TOUCH.jar" }) }}
                 </UButton>
-                |
                 <UButton
                   variant="link"
                   class="underline underline-offset-8 text-white"
@@ -95,7 +92,7 @@
                 </div>
               </div>
               <span class="text-orange-500">{{ t("Downloads.Notices.TouchScreens") }}</span>
-              <div>
+              <div class="mt-4">
                 <img src="/images/guides/screen_guide.png" :alt="t('Downloads.GuideAlt')" />
               </div>
             </div>
