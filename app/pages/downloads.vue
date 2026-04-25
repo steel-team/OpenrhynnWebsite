@@ -95,6 +95,9 @@
                 </div>
               </div>
               <span class="text-orange-500">{{ t("Downloads.Notices.TouchScreens") }}</span>
+              <div>
+                <img src="/images/guides/screen_guide.png" :alt="t('Downloads.GuideAlt')" />
+              </div>
             </div>
           </template>
         </UTabs>

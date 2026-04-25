@@ -15,6 +15,7 @@ export default async (_locale: any) => {
       DownloadTouch: "Download {file} (for touch screens)",
       DownloadAndroid: "Download {file} (Android legacy)",
     },
+    GuideAlt: "Screenshot with guide for touch screens",
     Notices: {
       JavaRequired: "* Java is required to run game",
       Emulators:

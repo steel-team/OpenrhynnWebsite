@@ -15,6 +15,7 @@ export default async (_locale: any) => {
       DownloadTouch: "Скачать {file} (для сенсорных экранов)",
       DownloadAndroid: "Скачать {file} (Android legacy)",
     },
+    GuideAlt: "Скриншот гайд для сенсорных устройств",
     Notices: {
       JavaRequired: "* Java необходима для запуска игры",
       Emulators:
