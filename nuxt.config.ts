@@ -1,6 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxtjs/i18n", "@nuxtjs/seo", "nuxt-security"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/ui",
+    "@nuxtjs/i18n",
+    "@nuxtjs/seo",
+    "nuxt-security",
+    "@nuxt/scripts",
+  ],
 
   devtools: {
     enabled: true,
@@ -98,6 +105,15 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true,
+  },
+
+  scripts: {
+    registry: {
+      googleTagManager: {
+        id: "GTM-KM8FVM48",
+        trigger: "onNuxtReady",
+      },
+    },
   },
 
   security: {
