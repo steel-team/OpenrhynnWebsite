@@ -1,7 +1,13 @@
 <script lang="ts" setup>
 import * as locales from "@nuxt/ui/locale";
+import type { NuxtError } from "#app";
 
+const props = defineProps({
+  error: Object as () => NuxtError,
+});
 const { t, locale } = useI18n();
+
+const handleError = () => clearError({ redirect: "/" });
 
 const currentLocale = computed(() =>
   Object.values(locales).find((item) => item.code === locale.value),
@@ -46,7 +52,21 @@ useSeoMeta({
     <SharedHeader />
 
     <UMain>
-      <NuxtPage />
+      <UContainer class="mb-32 mt-16 relative z-10">
+        <div>
+          <h1
+            class="text-3xl sm:text-5xl text-pretty tracking-tight font-bold text-highlighted text-center w-full"
+          >
+            {{ t("Core.Errors.Title", { code: error?.status }) }}
+          </h1>
+          <div class="text-pretty text-center flex flex-col items-center mt-6 gap-6">
+            <span>{{ t(`Core.Errors.Description${error?.status}`) }}</span>
+            <UButton @click="handleError">
+              {{ t("Core.Actions.Back") }}
+            </UButton>
+          </div>
+        </div>
+      </UContainer>
     </UMain>
 
     <SharedFooter />

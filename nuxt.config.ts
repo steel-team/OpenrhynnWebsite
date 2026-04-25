@@ -94,7 +94,10 @@ export default defineNuxtConfig({
       { code: "en", name: "en", file: "en.ts", language: "en" },
       { code: "ru", name: "ru", file: "ru.ts", language: "ru" },
     ],
-    multiDomainLocales: true,
+  },
+
+  ogImage: {
+    zeroRuntime: true,
   },
 
   security: {
