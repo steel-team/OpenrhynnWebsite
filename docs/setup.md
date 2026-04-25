@@ -34,7 +34,7 @@ git pull
 # Create user
 sudo adduser website # enter password and other info at that step
 sudo usermod -aG sudo website
-suso su website
+sudo su website
 # Install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
 
