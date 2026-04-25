@@ -80,7 +80,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2025-01-15",
 
-  debug: true,
+  debug: false,
 
   eslint: {
     config: {

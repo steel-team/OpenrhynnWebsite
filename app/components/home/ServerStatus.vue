@@ -20,10 +20,6 @@ import ServerInfo from "~/components/home/ServerInfo.vue";
 const { data: serversOnlineStatus } = await useFetch("/api/v1/composedstatus");
 
 const items = computed(() => {
-  if (!isMounted.value && import.meta.server) {
-    return [];
-  }
-
   const result = [];
 
   for (const srv of serversOnlineStatus.value?.masterServer?.servers ?? []) {
@@ -49,12 +45,6 @@ const items = computed(() => {
   }
 
   return result;
-});
-
-const isMounted = ref(false);
-
-onMounted(() => {
-  isMounted.value = true;
 });
 </script>
 
