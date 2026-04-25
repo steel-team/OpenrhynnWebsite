@@ -16,7 +16,7 @@
         web-share;
       "
       allowfullscreen
-      class="fixed top-0 left-0 h-screen w-screen z-100"
+      class="fixed top-0 left-0 h-lvh w-lvw z-100"
     ></iframe>
     <div class="fixed right-0 top-0 z-101">
       <UButton class="m-2" variant="link" icon="i-lucide-x" @click="emit('close')"> </UButton>
