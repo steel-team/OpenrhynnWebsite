@@ -20,6 +20,15 @@
       </div>
       <div class="mt-6">
         <h2 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted">
+          {{ t("HowTo.Guides.Guide4.Title") }}
+        </h2>
+        <div
+          class="text-base sm:text-lg text-balance text-toned mt-6"
+          v-html="t('HowTo.Guides.Guide4.Text')"
+        ></div>
+      </div>
+      <div class="mt-6">
+        <h2 class="text-3xl sm:text-4xl text-pretty tracking-tight font-bold text-highlighted">
           {{ t("HowTo.Guides.Guide3.Title") }}
         </h2>
         <div class="text-base sm:text-lg text-balance text-toned mt-6">

@@ -17,6 +17,10 @@ export default async (_locale: any) => {
         Title: "Where to start? Android (and browser)",
         Text: "There is a native Android client for OpenRhynn. However, it was built a long time ago and likely will not run on modern devices. We recommend using an emulator and the J2ME (Touch) client. This client features simplified text input: select a text field and press Enter (for the browser) or the center of the screen (for Android).",
       },
+      Guide4: {
+        Title: "What to do if the character gets stuck?",
+        Text: "If your character is stuck, enter the command <span class='text-orange-500'>!u</span> in the chat. GM commands can be found in the file: <a href='https://github.com/steel-team/OpenrhynnJavaServer/blob/master/src/main/java/com/steelteam/openrhynn/logic/CommandProcessor.java' target='_blank' class='text-blue-400 underline'>CommandProcessor.java</a>",
+      },
       Guide3: {
         Title: "Control scheme (touch screens)",
         PreText:
@@ -31,7 +35,7 @@ export default async (_locale: any) => {
         PostText1:
           "The two bottom buttons on the left and right are responsible for the soft keys (same as F1 and F2 on the PC version of the client).",
         PostText2:
-          "After selecting an input field, press FIRE (Enter) to open the text input menu (this is necessary when logging in/registering, as well as for chat). In the web version, only the Latin alphabet works for input. For other versions, it depends on the emulator.",
+          "After selecting an input field, press FIRE (Enter) to open the text input menu (this is necessary when logging in/registering, as well as for chat).",
       },
     },
   };
