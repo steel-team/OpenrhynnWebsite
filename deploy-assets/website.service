@@ -2,7 +2,7 @@
 Description=OpenRhynn website service
 
 [Service]
-User=frontend
+User=website
 KillMode=control-group
 WorkingDirectory=/home/website
 ExecStart=/home/website/start.sh

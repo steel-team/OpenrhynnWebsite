@@ -38,6 +38,9 @@ export default defineNuxtConfig({
       app: {
         apiBase: "server2.openrhynn.net",
         playBase: "http://192.168.1.20:46575/run?app=OpenRhynn",
+        analytics: {
+          gtag: "GTM-KM8FVM48",
+        },
         links: {
           github: "https://github.com/steel-team/OpenrhynnJavaServer",
           discord: "https://discord.gg/r8sqNfNh3B",
@@ -77,6 +80,8 @@ export default defineNuxtConfig({
 
   compatibilityDate: "2025-01-15",
 
+  debug: true,
+
   eslint: {
     config: {
       stylistic: {
@@ -105,15 +110,6 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true,
-  },
-
-  scripts: {
-    registry: {
-      googleTagManager: {
-        id: "GTM-KM8FVM48",
-        trigger: "onNuxtReady",
-      },
-    },
   },
 
   security: {

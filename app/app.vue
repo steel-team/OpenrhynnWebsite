@@ -2,6 +2,13 @@
 import * as locales from "@nuxt/ui/locale";
 
 const { t, locale } = useI18n();
+const config = useRuntimeConfig();
+
+if (import.meta.client) {
+  useScriptGoogleTagManager({
+    id: config.public.app.analytics.gtag,
+  });
+}
 
 const currentLocale = computed(() =>
   Object.values(locales).find((item) => item.code === locale.value),
