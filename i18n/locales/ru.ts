@@ -8,8 +8,7 @@ export default defineI18nLocale(async (locale) => {
   return {
     nuxtSiteConfig: {
       name: "OpenRhynn",
-      description:
-        "Майнинг криптовалюты на пуле с низкой комиссией и моментальным выводом на кошелек. Только выделенные сервера и квалифицированная команда разработки и поддержки.",
+      description: "",
     },
     Core: await Core(locale),
     Home: await Home(locale),
