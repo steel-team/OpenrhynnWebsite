@@ -20,6 +20,10 @@ export default defineNuxtConfig({
   app: {
     head: {
       titleTemplate: "%s - %siteName", //  %separator %siteName
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        { rel: "icon", type: "image/png", sizes: "250x250", href: "/images/logo_cut.png" },
+      ],
     },
   },
 
@@ -110,6 +114,16 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true,
+  },
+
+  robots: {
+    groups: [
+      {
+        userAgent: ["Yandex"],
+        cleanParam: ["ybaip", "etext"],
+        disallow: [],
+      },
+    ],
   },
 
   security: {
