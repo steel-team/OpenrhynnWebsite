@@ -71,6 +71,7 @@ export default defineNuxtConfig({
   experimental: {
     payloadExtraction: false,
     renderJsonPayloads: false, // fix for fucking devalue don't work with Error/FetchError types!
+    ssrStreaming: true,
     nitroAutoImports: true, // fix for nuxt/ui etc auto imports shit: https://github.com/nuxt/nuxt/issues/34142
     defaults: {
       nuxtLink: {
