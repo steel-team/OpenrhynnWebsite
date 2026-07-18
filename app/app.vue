@@ -47,6 +47,7 @@ useSeoMeta({
 </script>
 
 <template>
+  <NuxtLoadingIndicator :throttle="0" :height="2" :color="false" class="bg-orange-500" />
   <NuxtAnnouncer />
   <NuxtRouteAnnouncer />
   <UApp :locale="currentLocale">
