@@ -20,10 +20,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       titleTemplate: "%s - %siteName", //  %separator %siteName
-      link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { rel: "icon", type: "image/png", sizes: "250x250", href: "/images/logo_cut.png" },
-      ],
+      link: [{ rel: "icon", type: "image/png", sizes: "250x250", href: "/images/logo_cut.png" }],
     },
   },
 
